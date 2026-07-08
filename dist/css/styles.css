@@ -1,0 +1,81 @@
+/* Vibrant Customizations */
+:root {
+  --primary-accent: #00f2fe;
+  --secondary-accent: #4facfe;
+  --pink-accent: #f093fb;
+  --orange-accent: #f5576c;
+}
+
+body {
+  background: #0f172a; /* Deep dark blue background */
+}
+
+.reveal {
+  font-family: 'Inter', sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* Gradient Text for Title */
+.reveal h1 {
+  background: linear-gradient(to right, var(--primary-accent), var(--pink-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.reveal h2 {
+  color: var(--primary-accent);
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
+}
+
+.reveal section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.reveal section ul {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.reveal section ul li {
+  margin-bottom: 15px;
+}
+
+.reveal section ul li::marker {
+  color: var(--pink-accent);
+}
+
+/* Highlight class for important words */
+.highlight {
+  color: var(--pink-accent);
+  font-weight: 600;
+}
+
+/* Custom image styling */
+.reveal img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Pulsing animation for elements */
+@keyframes pulse-glow {
+  0% { text-shadow: 0 0 10px rgba(0, 242, 254, 0.5); }
+  50% { text-shadow: 0 0 25px rgba(0, 242, 254, 0.9), 0 0 5px rgba(255, 255, 255, 0.5); }
+  100% { text-shadow: 0 0 10px rgba(0, 242, 254, 0.5); }
+}
+
+.glow-text {
+  animation: pulse-glow 3s infinite;
+}
