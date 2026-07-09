@@ -38,4 +38,4 @@ Para visualizar a apresentação, basta abrir o arquivo principal em qualquer na
 
 ## Links
 
-- Vídeo: https://youtu.be/X-7qJg8J9-o
+- Vídeo: https://youtu.be/dmrOQc7sFGc
